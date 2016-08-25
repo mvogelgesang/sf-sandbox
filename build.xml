@@ -2,11 +2,21 @@
 
     <property file="build.properties"/>
     <property environment="env"/>
+    <property name="sf.username"      value="${env.SFUSER}"/>
+    <property name="sf.password"      value="${env.SFPASS}"/>
+    <property name="sf.serverurl"     value="${env.SFURL}"/>
+    <property name="sf.maxPoll"       value="500"/>
+    <property name="sf.maxWaitMillis" value="3000"/>
+    <property name="test.level"       value="NoTestRun"/>
+    <property name="check.only"       value="true"/>
+    <property name="log.type"         value="None"/>
 
     <!-- Setting default value for username, password and session id properties to empty string
          so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
          will be treated literally.
     -->
+
+
     <condition property="sf.username" value=""> <not> <isset property="sf.username"/> </not> </condition>
     <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
     <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
