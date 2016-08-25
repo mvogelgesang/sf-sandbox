@@ -161,9 +161,6 @@
         <name>DataCategoryGroup</name>
     </types>
     <types>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
         <members>Case</members>
         <name>EscalationRules</name>
     </types>
@@ -244,9 +241,6 @@
     <types>
         <members>*</members>
         <name>RemoteSiteSetting</name>
-    </types>
-    <types>
-        <name>Report</name>
     </types>
     <types>
         <members>*</members>
