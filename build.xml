@@ -2,9 +2,9 @@
 
     <property file="build.properties"/>
     <property environment="env"/>
-    <!-- <property name="sf.username"      value="${env.SFUSER}"/>
+    <property name="sf.username"      value="${env.SFUSER}"/>
     <property name="sf.password"      value="${env.SFPASS}"/>
-    <property name="sf.serverurl"     value="${env.SFURL}"/>-->
+    <property name="sf.serverurl"     value="${env.SFURL}"/>
     <property name="sf.maxPoll"       value="500"/>
     <property name="sf.maxWaitMillis" value="3000"/>
     <property name="test.level"       value="NoTestRun"/>
